@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<meta charset="utf-8">
+<title>Details on LoRa</title>
+<link href="styles/responsive.css" rel="stylesheet" type="text/css">
+
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">		
+</head>
+
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Details on LoRa</h1>
+    <nav>
+      <h2 id="menulink"><a href="#navlinks">Menu</a></h2>
+      <ul class="displayed" id="navlinks">
+        <li><a href="index.html">About This Project</a></li>
+		<li><a href="loraDetails.html" class="thispage">Details on LoRa</a></li>
+        <li><a href="liveData.html">Live Data</a></li>
+        <li><a href="loraGPS.html">Lethbridge LoRa GPS</a></li>
+        <li><a href="buildLog.html">LoRa Guides + Build Log</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+	<h2>How LoRa Works</h2>
+	 <p>Explaination here.</p>
+	 <p>Explaination continued.</p>
+	 <p>Explaination 3.</p>
+	  
+	 <p>Explaination conclusion.</p>
+	  
+  </main>
+	
+  <aside>
+	<h2>Second heading here.</h2>
+	  <!--iframe with live current voltage from solar system 2 via thingspeak-->
+    <iframe width="100%" height="168" style="border: 1px solid #2A3649;" src="https://thingspeak.com/channels/606993/widgets/20832"></iframe>
+
+	  <p>Infomation 1.</p>
+	  
+	 
+	  
+	  <p>Below is a graph of the last 2500 data points from the unit, updating in real time.</p>
+	  
+	  <!--iframe with voltage graph for solar system 2 via thingspeak-->
+	  <iframe width="100%" height="264" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/606993/charts/1?bgcolor=%232A3649&color=%23d62020&dynamic=true&results=2500&title=SolarSystem2BatteryStatus&type=line&xaxis=Time&yaxis=Voltage+%28Volts%29"></iframe>
+
+	  
+	
+  </aside>
+  <footer>
+	  <p>© Copyright 2019 - John Iddon</p>
+    </footer>
+    <script type="text/javascript" src="js/menu.js"></script>
+</div>
+</body>
+</html>
