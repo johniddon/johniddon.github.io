@@ -13,7 +13,7 @@
 <body>
 <div id="wrapper">
   <header>
-    <h1>Details on LoRa</h1>
+    <h1>How LoRa Works</h1>
     <nav>
       <h2 id="menulink"><a href="#navlinks">Menu</a></h2>
       <ul class="displayed" id="navlinks">
@@ -26,29 +26,31 @@
     </nav>
   </header>
   <main>
-	<h2>How LoRa Works</h2>
-	 <p>Explaination here.</p>
-	 <p>Explaination continued.</p>
-	 <p>Explaination 3.</p>
+	<h2>A Brief Introduction</h2>
+	 <p>LoRa stands for Long Range, and it is a system that allows for low power data transmission over great distances, ideal for unattended sensors that may not be maintained for long periods of time. LoRa is the physical layer of the network over which data is transmitted.</p>
+	 
+	<h2>Details</h2>
+	 <p>LoRa is a patented technology developed by Cycleo, who was then purchased by Semtech who continues to produce/develop LoRa chips. Being that this is a patented technology, a great deal of the information on the details of how LoRa communicates are trade secrets, but much of the inner workings have been studied by different parties and their findings released publicly.</p>
+	 
+	 <p>LoRa is based on chirp spread-spectrum technology. A chirp is a quick sweep of a signal from one frequency to another, and a sweep can be either up or down. When data is encoded in the chirps the chirps will start/end at varying frequencies in the band, these chirps that move about in the band are where the data is encoded.</p>
 	  
-	 <p>Explaination conclusion.</p>
+	 <p>LoRa is very useful in that it transmits in frequencies known as licence-free bands, also called the ISM band, where we can operate transmitters without a license, but of course with some restrictions. In North America the ISM band we use for LoRa is centered on 915 MHz (ranging from 902 MHz to 928Mhz).</p>
+	 
+	 <p>For large scale networks, a media access control (MAC) layer is needed to manage all of the devices that will be communicating reliably, and there are two main ones that I've seen so far, LoRaWAN (open specification) and Symphony Link (proprietary by Link Labs).</p>
+	 
+	<br>
+	 <p>Noted in my reference materials you'll find many interesting articles and videos. An interesting point I didn't know about that was brought up in Thomas Telkamp's lecture was the Fresnel zone 1, for which objects inside of it will cause great signal degradation by reflecting the signal out of phase with the original signal.</p>
 	  
   </main>
 	
   <aside>
-	<h2>Second heading here.</h2>
-	  <!--iframe with live current voltage from solar system 2 via thingspeak-->
-    <iframe width="100%" height="168" style="border: 1px solid #2A3649;" src="https://thingspeak.com/channels/606993/widgets/20832"></iframe>
-
-	  <p>Infomation 1.</p>
+	<h2>References:</h2>
 	  
-	 
-	  
-	  <p>Below is a graph of the last 2500 data points from the unit, updating in real time.</p>
-	  
-	  <!--iframe with voltage graph for solar system 2 via thingspeak-->
-	  <iframe width="100%" height="264" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/606993/charts/1?bgcolor=%232A3649&color=%23d62020&dynamic=true&results=2500&title=SolarSystem2BatteryStatus&type=line&xaxis=Time&yaxis=Voltage+%28Volts%29"></iframe>
-
+	  <ul>
+		<li>“What Is LoRa? A Technical Breakdown.” Link Labs, Link Labs, 26 June 2018, <a href="https://www.link-labs.com/blog/what-is-lora">https://www.link-labs.com/blog/what-is-lora</a>.</li>
+		<li>“LoRa Crash Course by Thomas Telkamp.” YouTube, The Things Network, 10 Nov. 2016, <a href="https://youtu.be/T3dGLqZrjIQ">https://youtu.be/T3dGLqZrjIQ</a>.</li>
+		<li>Wikipedia contributors. "ISM band." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 17 Jul. 2019. Web. 18 Jul. 2019.</li>
+	  </ul>
 	  
 	
   </aside>

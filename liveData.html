@@ -27,9 +27,11 @@
   </header>
   <div id="onemain">
     <h2></h2>
-      <p>Live data from the sensor network will be shown here when available.</p>
-	  
-	  
+	<br>
+	<br>
+	<br>
+    <p>Live data from the sensor network will be shown here when available.</p>
+	<br>
 	  
 	  <h2>Data Sent Over LoRa</h2>
 	  
@@ -37,22 +39,27 @@
 		<tbody>
 			<tr>
 				<td>
-					TEST
+					<iframe width="100%" height="264" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/825052/charts/1?bgcolor=%232A3649&color=%23d62020&dynamic=true&results=100&title=LoRa+Temperature+Sensor+1&type=line&xaxis=Time&yaxis=Temperature+%28+%C2%B0C+%29"></iframe>
 					<br>
-					Field 5
+					LoRa Test Temperature Sensor 1
+					<br>
+					Plot of temperature over time. LoRa transmitter uses a TMP36 sensor for temperature measurement.
 				</td>
+				
 				
 				<td>
 					TEST
 					<br>
-					Field 6
+					Field 7
 				</td>
 			</tr>
 			<tr>
 				<td>
-					TEST
+					<iframe width="70%" height="165" style="border: 0px solid #2A3649;" src="https://thingspeak.com/channels/825052/widgets/87480"></iframe>
 					<br>
-					Field 7
+					LoRa Test Temperature Sensor 1 - Current temperature.
+					<br>
+					Sensor location: Unknown.
 				</td>
 				
 				<td>
@@ -69,7 +76,7 @@
 	<br>
 	<br>	
 	
-	  
+	<hr>
 	<h2>Data Sent Over WiFi</h2>
 	  
    <table border="1">
@@ -79,21 +86,21 @@
 	<tr>
 	<td><iframe width="100%" height="264" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/668627/charts/1?bgcolor=%232A3649&color=%23d62020&dynamic=true&results=2500&title=SolarSystem1BatteryStatus&type=line&xaxis=Time&yaxis=Voltage+%28Volts%29"></iframe>
 		  <br>
-		  Solar System 1 - Plot of system voltage over time.</td>
+		  Solar System 1 - Plot of system battery voltage over time.</td>
       <td><iframe width="100%" height="264" style="border: 0px solid #cccccc;" src="https://thingspeak.com/channels/606993/charts/1?bgcolor=%232A3649&color=%23d62020&dynamic=true&results=2500&title=SolarSystem2BatteryStatus&type=line&xaxis=Time&yaxis=Voltage+%28Volts%29"></iframe>
 		  <br>
-		  Solar System 2 - Plot of system voltage over time.</td>
+		  Solar System 2 - Plot of system battery voltage over time.</td>
     </tr>
 	
 	<tr>
       <td><!--iframe with live current voltage from solar system 2 via thingspeak-->
     <iframe width="70%" height="165" style="border: 0px solid #2A3649;" src="https://thingspeak.com/channels/668627/widgets/31586"></iframe>
 		  <br>
-		  Solar System 1 current voltage.</a></td>
+		  Solar System 1 - Current voltage.</a></td>
       <td><!--iframe with live current voltage from solar system 2 via thingspeak-->
     <iframe width="70%" height="165" style="border: 0px solid #2A3649;" src="https://thingspeak.com/channels/606993/widgets/20832"></iframe>
 		  <br>
-		  Solar System 2 current voltage.</a></td>
+		  Solar System 2 - Current voltage.</a></td>
       
     </tr>
     
